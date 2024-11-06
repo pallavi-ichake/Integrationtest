@@ -31,7 +31,7 @@ public class DataProviderParalla
 		driver.get("https://www.facebook.com/");
 		driver.manage().window().maximize();
 
-		driver.findElement(By.id("email")).sendKeys(username);
+	//	driver.findElement(By.id("email")).sendKeys(username);
 
 		driver.findElement(By.id("pass")).sendKeys(passowrd);
 		
