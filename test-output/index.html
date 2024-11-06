@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProvider(null, null)">testDataProvider(null, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -128,22 +142,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProvider(Deshmukha, Ichake)">testDataProvider(Deshmukha, Ichake)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProvider(Abhijeet, Abhipal)">testDataProvider(Abhijeet, Abhipal)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProviderWithName(Deshmukha, Ichake)">testDataProviderWithName(Deshmukha, Ichake)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProviderWithName(Abhijeet, Abhipal)">testDataProviderWithName(Abhijeet, Abhipal)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProviderWithName(Abhijeet, Abhipal)">testDataProviderWithName(Abhijeet, Abhipal)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.TestNG.integration.DataProviderParalla" class="method navigator-link" hash-for-method="testDataProviderWithName(Deshmukha, Ichake)">testDataProviderWithName(Deshmukha, Ichake)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -158,20 +167,37 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.TestNG.integration.DataProviderParalla</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDataProvider(null, null)">
+                  </a> <!-- testDataProvider(null, null) -->
+                  <span class="method-name">testDataProvider</span>
+                  <span class="parameters">(null,null)</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at com.TestNG.integration.DataProviderParalla.testDataProvider(DataProviderParalla.java:34)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+... Removed 6 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.TestNG.integration.DataProviderParalla</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testDataProvider(Deshmukha, Ichake)">
-                  </a> <!-- testDataProvider(Deshmukha, Ichake) -->
-                  <span class="method-name">testDataProvider</span>
-                  <span class="parameters">(Deshmukha,Ichake)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="testDataProvider(Abhijeet, Abhipal)">
@@ -182,18 +208,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testDataProviderWithName(Deshmukha, Ichake)">
-                  </a> <!-- testDataProviderWithName(Deshmukha, Ichake) -->
-                  <span class="method-name">testDataProviderWithName</span>
-                  <span class="parameters">(Deshmukha,Ichake)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testDataProviderWithName(Abhijeet, Abhipal)">
                   </a> <!-- testDataProviderWithName(Abhijeet, Abhipal) -->
                   <span class="method-name">testDataProviderWithName</span>
                   <span class="parameters">(Abhijeet,Abhipal)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testDataProviderWithName(Deshmukha, Ichake)">
+                  </a> <!-- testDataProviderWithName(Deshmukha, Ichake) -->
+                  <span class="method-name">testDataProviderWithName</span>
+                  <span class="parameters">(Deshmukha,Ichake)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,9 +280,9 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.ExtentRepot.integration.ExtentListeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;docker.Setup_DockerGrid&quot;/&gt;
+      &lt;class name=&quot;com.Docker.integration.Setup_DockerGrid&quot;/&gt;
       &lt;class name=&quot;com.TestNG.integration.DataProviderParalla&quot;/&gt;
       &lt;class name=&quot;com.TestNG.integration.ParallalExcution&quot;/&gt;
     &lt;/classes&gt;
@@ -302,35 +328,35 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testDataProvider')
 data.setCell(0, 2, 'com.TestNG.integration.DataProviderParalla')
-data.setCell(0, 3, 6569);
+data.setCell(0, 3, 9237);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testDataProvider')
 data.setCell(1, 2, 'com.TestNG.integration.DataProviderParalla')
-data.setCell(1, 3, 6524);
+data.setCell(1, 3, 8478);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testDataProviderWithName')
 data.setCell(2, 2, 'com.TestNG.integration.DataProviderParalla')
-data.setCell(2, 3, 6094);
+data.setCell(2, 3, 4145);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'SecondTestCases')
-data.setCell(3, 2, 'com.TestNG.integration.ParallalExcution')
-data.setCell(3, 3, 3012);
+data.setCell(3, 1, 'testDataProviderWithName')
+data.setCell(3, 2, 'com.TestNG.integration.DataProviderParalla')
+data.setCell(3, 3, 3569);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testDataProviderWithName')
-data.setCell(4, 2, 'com.TestNG.integration.DataProviderParalla')
-data.setCell(4, 3, 2910);
+data.setCell(4, 1, 'SecondTestCases')
+data.setCell(4, 2, 'com.TestNG.integration.ParallalExcution')
+data.setCell(4, 3, 3003);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'FifthTestCases')
 data.setCell(5, 2, 'com.TestNG.integration.ParallalExcution')
-data.setCell(5, 3, 4);
+data.setCell(5, 3, 18);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'ForthTestCases')
+data.setCell(6, 1, 'ThirdTestCases')
 data.setCell(6, 2, 'com.TestNG.integration.ParallalExcution')
-data.setCell(6, 3, 2);
+data.setCell(6, 3, 4);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'ThirdTestCases')
+data.setCell(7, 1, 'ForthTestCases')
 data.setCell(7, 2, 'com.TestNG.integration.ParallalExcution')
-data.setCell(7, 3, 2);
+data.setCell(7, 3, 4);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'FirstTestCases')
 data.setCell(8, 2, 'com.TestNG.integration.ParallalExcution')
@@ -339,7 +365,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -365,59 +391,67 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">docker.Setup_DockerGrid</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.Docker.integration.Setup_DockerGrid</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startDockergrid</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">com.TestNG.integration.ParallalExcution</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">FifthTestCases</span>
+                <span class="method-start">15124 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">com.TestNG.integration.DataProviderParalla</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">testDataProvider(Deshmukha, Ichake)</span>
-                <span class="method-start">15078 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testDataProvider(null, null)</span>
+                <span class="method-start">15128 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDataProvider(Abhijeet, Abhipal)</span>
-                <span class="method-start">15078 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testDataProviderWithName(Abhijeet, Abhipal)</span>
-                <span class="method-start">21653 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testDataProviderWithName(Deshmukha, Ichake)</span>
-                <span class="method-start">27749 ms</span>
+                <span class="method-start">15128 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.TestNG.integration.ParallalExcution</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">FifthTestCases</span>
-                <span class="method-start">30668 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
                 <span class="method-name">FirstTestCases</span>
-                <span class="method-start">30675 ms</span>
+                <span class="method-start">15162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ForthTestCases</span>
-                <span class="method-start">30681 ms</span>
+                <span class="method-start">15168 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SecondTestCases</span>
-                <span class="method-start">30685 ms</span>
+                <span class="method-start">15175 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">ThirdTestCases</span>
-                <span class="method-start">33699 ms</span>
+                <span class="method-start">18196 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">docker.Setup_DockerGrid</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TestNG.integration.DataProviderParalla</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testDataProviderWithName(Abhijeet, Abhipal)</span>
+                <span class="method-start">24369 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testDataProviderWithName(Deshmukha, Ichake)</span>
+                <span class="method-start">27941 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.Docker.integration.Setup_DockerGrid</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">stopDockergrid</span>
-                <span class="method-start">33703 ms</span>
+                <span class="method-start">32089 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

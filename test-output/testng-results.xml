@@ -1,61 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-05T12:05:51 IST" name="Suite" finished-at="2024-11-05T12:06:29 IST" duration-ms="38739">
+  <suite started-at="2024-11-05T12:47:29 IST" name="Suite" finished-at="2024-11-05T12:48:06 IST" duration-ms="37147">
     <groups>
     </groups>
-    <test started-at="2024-11-05T12:05:51 IST" name="Test" finished-at="2024-11-05T12:06:29 IST" duration-ms="38739">
+    <test started-at="2024-11-05T12:47:29 IST" name="Test" finished-at="2024-11-05T12:48:06 IST" duration-ms="37147">
       <class name="com.TestNG.integration.ParallalExcution">
-        <test-method signature="FifthTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:06:21 IST" name="FifthTestCases" finished-at="2024-11-05T12:06:21 IST" duration-ms="4" status="PASS">
+        <test-method signature="FifthTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:47:44 IST" name="FifthTestCases" finished-at="2024-11-05T12:47:44 IST" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FifthTestCases -->
-        <test-method signature="FirstTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:06:21 IST" name="FirstTestCases" finished-at="2024-11-05T12:06:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="FirstTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:47:44 IST" name="FirstTestCases" finished-at="2024-11-05T12:47:44 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstTestCases -->
-        <test-method signature="ForthTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:06:21 IST" name="ForthTestCases" finished-at="2024-11-05T12:06:21 IST" duration-ms="2" status="PASS">
+        <test-method signature="ForthTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:47:44 IST" name="ForthTestCases" finished-at="2024-11-05T12:47:44 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ForthTestCases -->
-        <test-method signature="SecondTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:06:21 IST" name="SecondTestCases" finished-at="2024-11-05T12:06:24 IST" duration-ms="3012" status="PASS">
+        <test-method signature="SecondTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:47:44 IST" name="SecondTestCases" finished-at="2024-11-05T12:47:47 IST" duration-ms="3003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondTestCases -->
-        <test-method signature="ThirdTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:06:24 IST" name="ThirdTestCases" finished-at="2024-11-05T12:06:24 IST" duration-ms="2" status="PASS">
+        <test-method signature="ThirdTestCases()[pri:0, instance:com.TestNG.integration.ParallalExcution@4686afc2]" started-at="2024-11-05T12:47:47 IST" name="ThirdTestCases" finished-at="2024-11-05T12:47:47 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThirdTestCases -->
       </class> <!-- com.TestNG.integration.ParallalExcution -->
-      <class name="docker.Setup_DockerGrid">
-        <test-method is-config="true" signature="startDockergrid()[pri:0, instance:docker.Setup_DockerGrid@5e600dd5]" started-at="2024-11-05T12:05:51 IST" name="startDockergrid" finished-at="2024-11-05T12:06:06 IST" duration-ms="15037" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDockergrid -->
-        <test-method is-config="true" signature="stopDockergrid()[pri:0, instance:docker.Setup_DockerGrid@5e600dd5]" started-at="2024-11-05T12:06:24 IST" name="stopDockergrid" finished-at="2024-11-05T12:06:29 IST" duration-ms="5025" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopDockergrid -->
-      </class> <!-- docker.Setup_DockerGrid -->
       <class name="com.TestNG.integration.DataProviderParalla">
-        <test-method signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:06:06 IST" name="testDataProvider" data-provider="DataProviderTest" finished-at="2024-11-05T12:06:12 IST" duration-ms="6524" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Deshmukha]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Ichake]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testDataProvider -->
-        <test-method signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:06:06 IST" name="testDataProvider" data-provider="DataProviderTest" finished-at="2024-11-05T12:06:12 IST" duration-ms="6569" status="PASS">
+        <test-method signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:47:44 IST" name="testDataProvider" data-provider="DataProviderTest" finished-at="2024-11-05T12:47:53 IST" duration-ms="9237" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,7 +45,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataProvider -->
-        <test-method signature="testDataProviderWithName(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:06:12 IST" name="testDataProviderWithName" data-provider="dp" finished-at="2024-11-05T12:06:18 IST" duration-ms="6094" status="PASS">
+        <test-method signature="testDataProvider(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:47:44 IST" name="testDataProvider" data-provider="DataProviderTest" finished-at="2024-11-05T12:47:52 IST" duration-ms="8478" status="FAIL">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[Keys to send should be a not null CharSequence]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+at com.TestNG.integration.DataProviderParalla.testDataProvider(DataProviderParalla.java:34)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:80)
+at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1812)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1575)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDataProvider -->
+        <test-method signature="testDataProviderWithName(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:47:53 IST" name="testDataProviderWithName" data-provider="dp" finished-at="2024-11-05T12:47:57 IST" duration-ms="3569" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,7 +94,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDataProviderWithName -->
-        <test-method signature="testDataProviderWithName(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:06:18 IST" name="testDataProviderWithName" data-provider="dp" finished-at="2024-11-05T12:06:21 IST" duration-ms="2910" status="PASS">
+        <test-method signature="testDataProviderWithName(java.lang.String,java.lang.String)[pri:0, instance:com.TestNG.integration.DataProviderParalla@229c6181]" started-at="2024-11-05T12:47:57 IST" name="testDataProviderWithName" data-provider="dp" finished-at="2024-11-05T12:48:01 IST" duration-ms="4145" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,6 +111,16 @@
           </reporter-output>
         </test-method> <!-- testDataProviderWithName -->
       </class> <!-- com.TestNG.integration.DataProviderParalla -->
+      <class name="com.Docker.integration.Setup_DockerGrid">
+        <test-method is-config="true" signature="startDockergrid()[pri:0, instance:com.Docker.integration.Setup_DockerGrid@5e600dd5]" started-at="2024-11-05T12:47:29 IST" name="startDockergrid" finished-at="2024-11-05T12:47:44 IST" duration-ms="15077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDockergrid -->
+        <test-method is-config="true" signature="stopDockergrid()[pri:0, instance:com.Docker.integration.Setup_DockerGrid@5e600dd5]" started-at="2024-11-05T12:48:01 IST" name="stopDockergrid" finished-at="2024-11-05T12:48:06 IST" duration-ms="5043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopDockergrid -->
+      </class> <!-- com.Docker.integration.Setup_DockerGrid -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -6,7 +6,7 @@
 </listeners>
   <test thread-count="5" name="Test" parallel="classes">
     <classes>
-      <class name="docker.Setup_DockerGrid"/>
+      <class name="com.Docker.integration.Setup_DockerGrid"/>
       <class name="com.TestNG.integration.DataProviderParalla"/>
       <class name="com.TestNG.integration.ParallalExcution"/>
     </classes>

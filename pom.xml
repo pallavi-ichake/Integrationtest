@@ -42,7 +42,7 @@
 					<configuration>
 						<suiteXmlFiles>
 							<suiteXmlFile>
-								C:\Users\danga\eclipse-workspace\Integration_Test\testng.xml
+								C:\Users\danga\eclipse-workspace\Integration_Test\IntegartedXmlFile.xml
 							</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>

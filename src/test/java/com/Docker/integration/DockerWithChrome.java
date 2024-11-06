@@ -1,4 +1,4 @@
-package docker;
+package com.Docker.integration;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -7,18 +7,20 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-public class DockerWithFirefox {
+public class DockerWithChrome {
 
-	@Test
-	public void testFirefox() throws MalformedURLException
+	
+    @Test
+	public void testChrome() throws MalformedURLException
 	{
-		DesiredCapabilities cap=DesiredCapabilities.firefox();
-
+	
+		DesiredCapabilities cap=DesiredCapabilities.chrome();
+	
 		URL url=new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver=new RemoteWebDriver(url,cap);
 	
-		driver.get("https://hub.docker.com/r/selenium/standalone-chrome");
-		System.out.println("Title of the Home Firefox page:"+driver.getTitle());
+		driver.get("https://opensource-demo.orangehrmlive.com/");
+		System.out.println("Title of the Home chrome page:"+driver.getTitle());
 		
 		driver.quit();
 	}

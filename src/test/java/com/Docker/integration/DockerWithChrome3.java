@@ -1,4 +1,4 @@
-package docker;
+package com.Docker.integration;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.Test;
 
-public class DockerWithChrome {
+public class DockerWithChrome3 {
 
 	
     @Test
@@ -19,7 +19,7 @@ public class DockerWithChrome {
 		URL url=new URL("http://localhost:4444/wd/hub");
 		RemoteWebDriver driver=new RemoteWebDriver(url,cap);
 	
-		driver.get("https://opensource-demo.orangehrmlive.com/");
+		driver.get("https://www.youtube.com/results?search_query=hyr+tutorials");
 		System.out.println("Title of the Home chrome page:"+driver.getTitle());
 		
 		driver.quit();
